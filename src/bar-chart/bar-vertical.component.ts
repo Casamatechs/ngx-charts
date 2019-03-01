@@ -51,6 +51,9 @@ import { BaseChartComponent } from '../common/base-chart.component';
           [maxTickLength]="maxYAxisTickLength"
           [tickFormatting]="yAxisTickFormatting"
           [ticks]="yAxisTicks"
+               [referenceLines]="referenceLines"
+               [showRefLines]="showRefLines"
+               [showRefLabels]="showRefLabels"
           (dimensionsChanged)="updateYAxisWidth($event)">
         </svg:g>
         <svg:g ngx-charts-series-vertical
@@ -111,6 +114,9 @@ export class BarVerticalComponent extends BaseChartComponent {
   @Input() yScaleMin: number;
   @Input() showDataLabel: boolean = false;
   @Input() dataLabelFormatting: any;
+  @Input() showRefLines: boolean = false;
+  @Input() referenceLines: any;
+  @Input() showRefLabels: boolean = true;
 
   @Output() activate: EventEmitter<any> = new EventEmitter();
   @Output() deactivate: EventEmitter<any> = new EventEmitter();

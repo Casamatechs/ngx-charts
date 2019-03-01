@@ -30,7 +30,10 @@ const chartGroups = [
           'trimXAxisTicks',
           'trimYAxisTicks',
           'maxXAxisTickLength',
-          'maxYAxisTickLength'
+          'maxYAxisTickLength',
+          'showRefLines',
+          'referenceLines',
+          'showRefLabels'
         ]
       },
       {
